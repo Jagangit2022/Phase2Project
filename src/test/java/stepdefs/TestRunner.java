@@ -9,6 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 		
+		plugin = {"html:target/html-cucmber","json:target/cucumber.json"},
 		features = "src/test/java/features",
 		tags = {"@Sanity"},
 		glue= {"stepdefs"})
